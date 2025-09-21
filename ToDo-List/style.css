@@ -1,7 +1,15 @@
+:root {
+    --background: #f9f9f9;
+    --foreground: #3a3a3a;
+    --font-serif: "Times New Roman", Times, serif;
+    --font-mono: "Courier New", Courier, monospace;
+
+}
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: #f4f4f9;
+    background: var(--background);
     display: flex;
+    color: var(--foreground);
     justify-content: center;
     align-items: flex-start;
     padding: 50px;
@@ -9,6 +17,8 @@ body {
 
 .container {
     background: white;
+    font-family: var(--font-mono);
+    border: 1px solid var(--foreground);
     padding: 20px 30px;
     border-radius: 10px;
     width: 350px;
@@ -16,6 +26,7 @@ body {
 
 h1 {
     text-align: center;
+    font-family: var(--font-serif);
 }
 
 .input-section {
@@ -34,13 +45,14 @@ input {
 button {
     padding: 10px;
     border: none;
-    background: #28a745;
+    background: var(--foreground);
+    color: var(--background);
     cursor: pointer;
     border-radius: 0 5px 5px 0;
 }
 
 button:hover {
-    background: #218838;
+    background: #505050;
 }
 
 ul {
@@ -67,7 +79,7 @@ li.completed {
     padding: 5px 10px;
     color: white;
     border: none;
-    background: #28a745;
+    background: red;
     cursor: pointer;
     border-radius: 5px;
 }
