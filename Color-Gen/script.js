@@ -9,5 +9,5 @@ function getRandomColor() {
 btn.addEventListener("click", () => {
     const color = getRandomColor();
     document.body.style.backgroundColor = color;
-    colorText.textContent = color;
+    colorText.textContent = color.toUpperCase();
 });
