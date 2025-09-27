@@ -14,7 +14,7 @@ function addTask() {
     span.textContent = taskText;
 
     const delBtn = document.createElement("delBtn");
-    delBtn.textContent = "Delete";
+    delBtn.textContent = "X";
     delBtn.classList.add("delete-btn")
 
     span.addEventListener("click", () => {
